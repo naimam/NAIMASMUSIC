@@ -8,8 +8,6 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 @app.route('/')
 def hello_world():
-    """ Returns root endpoint HTML """
-
     ARTIST_IDS = ["78rUTD7y6Cy67W1RVzYs7t", "2xvtxDNInKDV4AvGmjw6d1", 
     "1CbA4z6JauNQnHzOErDQL6", "3x2XRFCUMHeXZ9uRit3pKu", 
     "2SJhf6rTOU53g8yBdAjPby", "73sIBHcqh3Z3NyqHKZ7FOL",
