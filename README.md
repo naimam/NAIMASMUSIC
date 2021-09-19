@@ -34,7 +34,7 @@ View the website [here](http://example.com/ "website link").
  5. If want to run on localhost - comment out the following lines on app.py:
    ```python
    app.run(
-    # host=os.getenv('IP', '0.0.0.0'),
+    # host='0.0.0.0',
     # port=int(os.getenv('PORT', 8080)),
     debug=True
    )
@@ -46,7 +46,7 @@ View the website [here](http://example.com/ "website link").
 ## Technical Issues & How I Solved Them
 your process, what you searched, what resources you used)
 1. Git was not letting me push to my main branch, so I searched on stack overflow for a solution. I found out I could use the command "git push -f origin main". It worked, however, I lost all of my previous commits.
-2. 
+2. Another issue I found was that when I deployed my app to heroku, I got an "Application Error". When I checked the logs, I found that I had the error "Heroku H10-App crashed". After searching through my code, I found that I had not initialized port to "port=int(os.getenv('PORT', 8080))".
 
 ## Additional Features To Implement:
 1. Using Twitter API to access tweets mentioning the artist name & song - was going to include this but there is an approval application that takes time.
