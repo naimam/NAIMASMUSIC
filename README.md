@@ -43,8 +43,7 @@ View the website [here](http://example.com/ "website link").
 
 
 
-## Technical Issues & How I Solved Them
-your process, what you searched, what resources you used)
+## Technical Issues 
 1. Git was not letting me push to my main branch, so I searched on stack overflow for a solution. I found out I could use the command "git push -f origin main". It worked, however, I lost all of my previous commits.
 2. Another issue I found was that when I deployed my app to heroku, I got an "Application Error". When I checked the logs, I found that I had the error "Heroku H10-App crashed". After searching through my code, I found that I had not initialized port to "port=int(os.getenv('PORT', 8080))".
 
@@ -54,5 +53,4 @@ your process, what you searched, what resources you used)
 3. Display more information on artists using the Spotify API such as their albums and related artists.
 
 
-Detailed description of 2+ technical issues and how you solved it (your process, what you searched, what resources you used)
 
