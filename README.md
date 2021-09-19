@@ -43,7 +43,7 @@ View the website [here](https://naimsproj1m1.herokuapp.com/ "website link").
 
 
 
-## Technical Issues 
+## Technical Issues / Problems
 1. Git was not letting me push to my main branch, so I searched on stack overflow for a solution. I found out I could use the command "git push -f origin main". It worked, however, I lost all of my previous commits.
 2. Another issue I found was that when I deployed my app to heroku, I got an "Application Error". When I checked the logs, I found that I had the error "Heroku H10-App crashed". After searching through my code, I found that I had not initialized port to "port=int(os.getenv('PORT', 8080))".
 
