@@ -45,7 +45,7 @@ View the website [here](http://example.com/ "website link").
 
 ## Technical Issues & How I Solved Them
 your process, what you searched, what resources you used)
-1. 
+1. Git was not letting me push to my main branch, so I searched on stack overflow for a solution. I found out I could use the command "git push -f origin main". It worked, however, I lost all of my previous commits.
 2. 
 
 ## Additional Features To Implement:
