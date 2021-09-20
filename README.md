@@ -1,7 +1,7 @@
 # CSC 4350 Project 1 Milestone by Naima Mohamed 
 A simple webpage that displays a random artist and a random song every time you refresh the page.
 Also displays an audio preview (if available) and a link to the genius lyrics of the song.
-View the website [here](https://naimsproj1m1.herokuapp.com/ "website link").
+View the website [here](https://naimasmusic.herokuapp.com/ "website link").
  
 ![Screenshot of website](https://github.com/csc4350-f21/project1-nmohamed6/blob/main/static/project1pg.png "Screenshot of website")
 
