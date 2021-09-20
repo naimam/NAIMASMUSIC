@@ -15,22 +15,35 @@ def main():
     artist_len = len(ARTIST_IDS) - 1
     random_artist = random.randint(0, artist_len)	
     artist_info = get_artist_info(ARTIST_IDS[random_artist])
-    name=artist_info[0],
+    # ARTIST INFO
+    name=artist_info[0]
+    img = artist_info[1]
+
+    #TRACK INFO
     track = artist_info[2]
     trackName = track[0]
-    lyricLink = get_lyrics(name, trackName)
+    trackAudio = track[1]
+    trackImg = track[2]
+
     topTracks = artist_info[3]
+
+    lyricLink = get_lyrics(name, trackName)
+    
+
     return render_template(
         "index.html",
-        name = artist_info[0],
-        img = artist_info[1],
+        name = name,
+        img = img,
         len = len(topTracks), topTracks = topTracks,
         track = track,
+        trackName = trackName,
+        trackImg = trackImg,
+        trackAudio = trackAudio,
         lyricLink = lyricLink,
     )
 
 app.run(
-    host='0.0.0.0',
-    port=int(os.getenv('PORT', 8080)),
+ #   host='0.0.0.0',
+ #   port=int(os.getenv('PORT', 8080)),
     debug=True
 )

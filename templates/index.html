@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" href="{{img}}" />
 	<link rel="stylesheet" href={{ url_for( 'static', filename='style.css' ) }} />
-	<title>{{name}} - {{track[0]}}</title>
+	<title>{{name}} - {{trackName}}</title>
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +41,7 @@
 					<h2>Top Tracks</h2>
 					<ol> 
 					    {%for i in range(0, len)%}
-                            {% if topTracks[i] == track[0] %}
+                            {% if topTracks[i] == trackName %}
 						        <li class="np">{{topTracks[i]}}</li> 
                             
                             {% else %}
@@ -56,9 +56,9 @@
 			
 			<div class="column">
 				<div class="card">
-					<h1 id="title">Now Playing: {{track[0]}}</h1> <img src="{{track[2]}}" />
+					<h1 id="title">Now Playing: {{trackName}}</h1> <img src="{{trackImg}}" />
 					<audio controls>
-						<source src="{{track[1]}}" type="audio/mpeg" /> Audio file not supported for specific track. Refresh browser to get new one! </audio>
+						<source src="{{trackAudio}}" type="audio/mpeg" /> Audio file not supported for specific track. Refresh browser to get new one! </audio>
 					<p> NOTE: If audio player is not playing, the audio file is not available for this specific track. Refresh your browser to get new one!</p>
 					<br /> <a href="{{lyricLink}}">Genius Lyrics</a> 
 				</div>

@@ -67,7 +67,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    width: 50%;
+    width: 60%;
     border-width: 7px;
     border-radius: 5px;
     border-color: var(--green);
@@ -98,9 +98,9 @@
     border-color: var(--black);
     border: 2px;
     border-style: solid;
-    -webkit-animation:spin 20s linear infinite;
-    -moz-animation:spin 20s linear infinite;
-    animation:spin 20s linear infinite;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
   }
 
  @-moz-keyframes spin { 
@@ -136,7 +136,7 @@
     clear: both;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .column {
       width: 100%;
       display: block;
